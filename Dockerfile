@@ -5,7 +5,7 @@ WORKDIR /usr/local/bin
 RUN dnf update -y && dnf install \
     java-17-openjdk-headless -y
 
-RUN curl --output fabric-server.jar https://meta.fabricmc.net/v2/versions/loader/1.19.4/0.14.19/0.11.2/server/jar
+RUN curl --output fabric-server.jar https://meta.fabricmc.net/v2/versions/loader/1.19.2/0.14.19/0.11.2/server/jar
 
 RUN echo "eula=true" > eula.txt
 
