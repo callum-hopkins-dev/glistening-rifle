@@ -1,0 +1,13 @@
+version: '3.8'
+
+volumes:
+  universe: {}
+
+services:
+  glistening-rifle:
+    restart: always
+    build: .
+    ports:
+      - "25565:25565"
+    volumes:
+      - "universe:/var/universe:rw"
